@@ -1,0 +1,97 @@
+:root {
+    --primary: #87b5b5;
+    --primary-light: #c0d8d8;
+    --primary-dark: #49a3a3;
+}
+
+html,
+body {
+    background-color: var(--primary);
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editor-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+}
+
+.heading,
+.editorHeading,
+.previewHeading {
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 0.5rem 0rem 0.5rem 0.75rem;
+    background-color: var(--primary-dark);
+    border: 1px solid black;
+}
+
+.editorHeading {
+    border: 1px solid black;
+    border-bottom-width: 0px;
+}
+
+#editor {
+    height: 50vh;
+    width: 50vw;
+    border-color: black;
+    background-color: var(--primary-light);
+}
+
+#editor:active,
+#editor:focus {
+    outline: none !important;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.previewHeading {
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+article {
+    margin-top: 2rem;
+    width: 80vw;
+    border: 1px solid black;
+    border-top-width: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.previewBody {
+    background-color: var(--primary-light);
+    padding: 0rem 1rem;
+}
+
+/* Custom markdown elements */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.image {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.heading1 {
+    font-size: 2rem;
+    text-decoration-line: underline;
+}
+
+.pre {
+    background-color: #fff;
+}
